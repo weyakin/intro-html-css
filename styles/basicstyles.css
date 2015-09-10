@@ -1,0 +1,141 @@
+/* Welcome to the Basic Styles Cheat Sheet for Intro to HTML/CSS by Victoria Chapman! */
+
+
+/* Font-family determines what font text will be using. This is inside of a selector for a paragraph tag object.
+These are a couple of examples. Font-family can be any font, but common system fonts or use of special web-fonts are best. */
+p {
+	font-family: arial, helvetica, sans-serif;
+	font-family: georgia, times, serif;
+}
+
+/* Font-size determines the size of the text you are styling. This is shown on a h2 header tag with a class.
+Font sizes can be done in pixels, percentages, or ems. Ems are easier to get more accurate increments and
+are used more frequently in modern web design. */
+
+h2.second-header {
+	font-size:12px;
+	font-size:90%;
+	font-size:1.2em;
+}
+
+/* Text-align is used to align a block of text, left, right, center, or justified. */
+
+p.main-paragraph {
+	text-align:right;
+	text-align:left;
+	text-align:center;
+	text-align:justify;
+}
+
+/* Color determines the color of the text. This is inside of an h1 tag, which is the largest sized header text.
+Colors use either hex numbers (the first example) or rgba values (second example). The first three numbers determine the color.
+The last number determines the opacity. Both of the examples shown represent white.  */
+h1 {
+	color:#ffffff;
+	color:rgba(255,255,255,1);
+}
+
+/* Background elements help determine the style of an object's background. This can include colors, images, repeating
+or non-repeating images, and position. Here are a few examples of how it can be done. It is shown on a div object. */
+
+div {
+	background-image:url("../images/kangaroodog.gif");
+	background-repeat:no-repeat;
+	background-color:#cecece;
+	background-position:top left;
+	/* this option below combines it all together into a background property */
+	background:#cecece url("../images/kangaroodog.gif") no-repeat top left;
+}
+
+
+/* Width is used to determine the width of an object. It can be set using pixels, percentages, or ems. This is shown
+using a div with the class "block1" as an example */
+
+div.block1 {
+	width:100%;
+	width:950px;
+	width:10em;
+}
+
+/* Height is used to determine the height of an object. It can also be set using pixels, percentages, or ems. If you want
+your object to have a set height, use this. If you want it's height to vary based on content, you can either give it no 
+height or give it a height of "auto". */
+
+div.block2 {
+	height:200px;
+	height:50%;
+	height:5em;
+	height:auto;
+}
+
+/* Margin is used to give an object space around its outside edge. Margins can be set on left, right, top, bottom, or
+all four. It can be done separately or combined. Margin numbers when combined, always start at the top and go clockwise. */
+
+div.breathing-room {
+	margin:5px 10px 15px 20px;
+	margin-top:5px;
+	margin-right:10px;
+	margin-bottom:15px;
+	margin-left:20px;
+}
+
+/* Padding is used to give an object space around its inside edge. The same rules apply as margin, except it applies the
+space inside the object instead of outside the object. Divs are a good example to show this. */
+
+/*** NOTE: paddding and the width of an object are added together to create a total width ***/
+
+div.padding-class {
+	padding:5px 10px 15px 20px;
+	padding-top:5px;
+	padding-right:10px;
+	padding-bottom:15px;
+	padding-left:20px;
+}
+
+/* Border is a way to add a border around your object. You can set the width, color, and style. */
+
+div.border-box {
+	border-width:1px;
+	border-style: solid;
+	border-style: dashed;
+	border-style:dotted;
+	border-color:#b42c2c;
+	border:1px solid #b42c2c; /* You can set border all together too like this */
+}
+
+/* Float is used to make an object float over to the left or to the right. It is commonly used on images that are
+floating to the right or left of a content block, with divs that are floating side-by-side, or a variety of other uses. */
+
+img {
+	float:left;
+	float:right;
+	float:none;
+}
+
+/* Clear is used to move an item below other items that may be floating to the left or right. Clearing both 
+will clear it of all items left or right. */
+
+div.clear {
+	clear:both;
+	clear:left;
+	clear:right;
+}
+
+/* Display is a way of showing how the box element of the object is displayed. Below are a few examples. */
+
+div {
+	display:block; /* shows an item full width to its specified width*/
+	display:inline; /* shows an item side-by-side of other items */
+	display:inline-block; /* shows an item side-by-side of other items with the inside formatting of a block */
+	display:none; /* this completely hides an item */
+}
+
+/* Position shows how an object is going to be positioned. Mostly commonly, positioning is relative to
+the container it is within or absolutely positioned. */
+
+div.move-this-box {
+	position:absolute;
+	position:relative;
+}
+
+/* For a more complete list of CSS info, please visit: http://www.w3schools.com/css/default.asp */
